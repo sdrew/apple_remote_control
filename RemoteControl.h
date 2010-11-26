@@ -102,4 +102,7 @@ typedef enum _RemoteControlEventIdentifier {
 // name of the device
 + (const char*) remoteControlDeviceName;
 
+// Don't retain delegate
+@property (nonatomic, assign) id delegate;
+
 @end

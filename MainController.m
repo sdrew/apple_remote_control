@@ -118,4 +118,9 @@
 	
 }
 
+// wrapper method	
+- (void) sendRemoteButtonEvent: (RemoteControlEventIdentifier) event pressedDown: (BOOL) pressedDown remoteControl: (RemoteControl*) remoteControl {	
+	[self remoteButton:event pressedDown:pressedDown clickCount:1];	
+}
+
 @end
